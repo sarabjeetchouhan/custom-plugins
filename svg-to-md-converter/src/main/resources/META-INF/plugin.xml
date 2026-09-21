@@ -1,0 +1,23 @@
+<idea-plugin>
+    <id>com.sc.plugin.svg-to-md-converter</id>
+    <name>SVG to Markdown Converter</name>
+    <vendor>Self</vendor>
+    <description>Copies SVG file content into a same-directory Markdown file.</description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <notificationGroup id="SVG to Markdown" displayType="BALLOON" />
+    </extensions>
+
+    <actions>
+        <action id="com.sc.plugin.SvgToMarkdownAction"
+                class="com.sc.plugin.SvgToMarkdownAction"
+                text="Convert SVG to Markdown"
+                description="Create a Markdown file containing this SVG file content">
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>

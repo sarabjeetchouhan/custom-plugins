@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">Mountain image gallery</title>
+  <desc id="desc">Three illustrated landscape cards with mountains, sun, and water.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9bd7ff"/>
+      <stop offset="1" stop-color="#eef9ff"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#236b9c"/>
+      <stop offset="1" stop-color="#75c9d9"/>
+    </linearGradient>
+    <clipPath id="card-clip">
+      <rect width="250" height="360" rx="18"/>
+    </clipPath>
+  </defs>
+
+  <rect width="900" height="560" fill="#f7f4ee"/>
+  <text x="450" y="58" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="700" fill="#263238">
+    Illustrated image gallery
+  </text>
+  <text x="450" y="88" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#607d8b">
+    A self-contained SVG sample with reusable gradients and clipped artwork
+  </text>
+
+  <g transform="translate(45 130)">
+    <rect width="250" height="360" rx="18" fill="#ffffff" stroke="#d7dee3" stroke-width="2"/>
+    <g clip-path="url(#card-clip)">
+      <rect width="250" height="220" fill="url(#sky)"/>
+      <circle cx="190" cy="62" r="30" fill="#ffd166"/>
+      <path d="M0 208 73 103l48 67 36-45 93 112Z" fill="#496a81"/>
+      <path d="m73 103 22 31-16-7-14 20-14-6zM157 125l25 30-19-9-14 18-13-8z" fill="#f8fbfc"/>
+      <path d="M0 210q62-29 125 0t125 0v70H0z" fill="url(#water)"/>
+      <path d="M20 238h83M145 252h75M55 267h120" stroke="#b9edf0" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    <text x="20" y="300" font-family="sans-serif" font-size="20" font-weight="700" fill="#263238">Alpine morning</text>
+    <text x="20" y="328" font-family="sans-serif" font-size="14" fill="#607d8b">Layered vector landscape</text>
+  </g>
+
+  <g transform="translate(325 130)">
+    <rect width="250" height="360" rx="18" fill="#ffffff" stroke="#d7dee3" stroke-width="2"/>
+    <g clip-path="url(#card-clip)">
+      <rect width="250" height="220" fill="#f6d7b0"/>
+      <circle cx="60" cy="62" r="34" fill="#ef8354"/>
+      <path d="M0 180 64 112l38 39 52-77 96 106v60H0z" fill="#8c4a3f"/>
+      <path d="m102 151 52-77 24 87-24-18-25 22z" fill="#c66b57"/>
+      <path d="M0 207q80-36 150 0t100 0v73H0z" fill="#d9a441"/>
+      <path d="M42 198v74M77 192v80M192 190v82" stroke="#a56e2b" stroke-width="7"/>
+    </g>
+    <text x="20" y="300" font-family="sans-serif" font-size="20" font-weight="700" fill="#263238">Desert trail</text>
+    <text x="20" y="328" font-family="sans-serif" font-size="14" fill="#607d8b">Warm palette and silhouettes</text>
+  </g>
+
+  <g transform="translate(605 130)">
+    <rect width="250" height="360" rx="18" fill="#ffffff" stroke="#d7dee3" stroke-width="2"/>
+    <g clip-path="url(#card-clip)">
+      <rect width="250" height="220" fill="#283b73"/>
+      <circle cx="190" cy="55" r="25" fill="#f4f1de"/>
+      <circle cx="182" cy="48" r="25" fill="#283b73"/>
+      <path d="M0 178 60 122l34 29 49-55 107 92v72H0z" fill="#182447"/>
+      <path d="M0 208q70-22 125 0t125 0v72H0z" fill="#315b88"/>
+      <g fill="#fff4b8">
+        <circle cx="35" cy="44" r="2"/><circle cx="82" cy="74" r="2"/>
+        <circle cx="126" cy="35" r="2"/><circle cx="218" cy="104" r="2"/>
+        <circle cx="155" cy="92" r="2"/>
+      </g>
+    </g>
+    <text x="20" y="300" font-family="sans-serif" font-size="20" font-weight="700" fill="#263238">Moonlit lake</text>
+    <text x="20" y="328" font-family="sans-serif" font-size="14" fill="#607d8b">Night scene with stars</text>
+  </g>
+</svg>

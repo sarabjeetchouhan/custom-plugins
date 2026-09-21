@@ -1,0 +1,42 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.intellij.platform' version '2.19.0'
+}
+
+group = 'com.sc.plugin'
+version = '1.0.0'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21) // Or 17 depending on target IDE
+    }
+}
+repositories {
+    mavenCentral()
+    intellijPlatform {
+        defaultRepositories()
+    }
+}
+
+dependencies {
+    intellijPlatform {
+        intellijIdea('2025.2.6')
+    }
+    testImplementation platform('org.junit:junit-bom:6.0.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+def copyPluginToReleases = tasks.register('copyPluginToReleases', Copy) {
+    from(layout.buildDirectory.dir('distributions'))
+    into(layout.projectDirectory.dir("releases/${project.version}"))
+    include("${project.name}-${project.version}.zip")
+}
+
+tasks.named('buildPlugin') {
+    finalizedBy(copyPluginToReleases)
+}

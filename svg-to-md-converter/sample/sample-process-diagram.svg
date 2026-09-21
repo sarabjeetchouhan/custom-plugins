@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="540" viewBox="0 0 1000 540" role="img" aria-labelledby="title desc">
+  <title id="title">Document processing workflow</title>
+  <desc id="desc">A left-to-right process diagram from upload through validation and publishing.</desc>
+  <defs>
+    <linearGradient id="header" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4338ca"/>
+      <stop offset="1" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect width="1000" height="540" fill="#f8fafc"/>
+  <rect width="1000" height="110" fill="url(#header)"/>
+  <text x="55" y="52" font-family="sans-serif" font-size="30" font-weight="700" fill="#ffffff">Document processing workflow</text>
+  <text x="55" y="82" font-family="sans-serif" font-size="16" fill="#dbeafe">A sample flow diagram for demonstrating SVG-to-Markdown conversion</text>
+
+  <g font-family="sans-serif">
+    <g transform="translate(48 190)">
+      <rect width="180" height="150" rx="16" fill="#ffffff" stroke="#93c5fd" stroke-width="3"/>
+      <circle cx="90" cy="45" r="25" fill="#dbeafe"/>
+      <path d="M90 29v25m0 0-10-10m10 10 10-10M67 74h46" stroke="#2563eb" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <text x="90" y="112" text-anchor="middle" font-size="20" font-weight="700" fill="#1e3a8a">Upload</text>
+      <text x="90" y="134" text-anchor="middle" font-size="13" fill="#475569">Receive source file</text>
+    </g>
+
+    <g transform="translate(294 190)">
+      <rect width="180" height="150" rx="16" fill="#ffffff" stroke="#c4b5fd" stroke-width="3"/>
+      <circle cx="90" cy="45" r="25" fill="#ede9fe"/>
+      <path d="m75 45 10 10 21-23" stroke="#7c3aed" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="90" y="112" text-anchor="middle" font-size="20" font-weight="700" fill="#5b21b6">Validate</text>
+      <text x="90" y="134" text-anchor="middle" font-size="13" fill="#475569">Check format and rules</text>
+    </g>
+
+    <g transform="translate(540 190)">
+      <rect width="180" height="150" rx="16" fill="#ffffff" stroke="#fcd34d" stroke-width="3"/>
+      <circle cx="90" cy="45" r="25" fill="#fef3c7"/>
+      <path d="M90 25v40M70 45h40" stroke="#d97706" stroke-width="6" stroke-linecap="round"/>
+      <text x="90" y="112" text-anchor="middle" font-size="20" font-weight="700" fill="#92400e">Transform</text>
+      <text x="90" y="134" text-anchor="middle" font-size="13" fill="#475569">Build normalized output</text>
+    </g>
+
+    <g transform="translate(786 190)">
+      <rect width="165" height="150" rx="16" fill="#ffffff" stroke="#86efac" stroke-width="3"/>
+      <circle cx="82" cy="45" r="25" fill="#dcfce7"/>
+      <path d="m67 45 10 10 21-23" stroke="#16a34a" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="82" y="112" text-anchor="middle" font-size="20" font-weight="700" fill="#166534">Publish</text>
+      <text x="82" y="134" text-anchor="middle" font-size="13" fill="#475569">Save and notify</text>
+    </g>
+  </g>
+
+  <g stroke="#64748b" stroke-width="4" fill="none" marker-end="url(#arrow)">
+    <path d="M228 265h62"/>
+    <path d="M474 265h62"/>
+    <path d="M720 265h62"/>
+  </g>
+  <path d="M868 350v75H138v-75" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8 8" fill="none"/>
+  <text x="500" y="460" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#64748b">
+    Errors can return to the caller before the output is published
+  </text>
+</svg>
