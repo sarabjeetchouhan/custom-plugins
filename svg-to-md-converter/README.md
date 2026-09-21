@@ -293,24 +293,21 @@ For the current version:
 releases/1.0.0/svg-to-md-converter-1.0.0.zip
 ```
 
-You can also browse the repository's published builds and downloadable
-artifacts from the [GitHub Releases page](https://github.com/sarabjeetchouhan/tech-library/releases).
-Published release ZIPs, when available, should be attached to the matching
-GitHub release.
+You can browse the versioned release ZIPs in the project's
+[`releases/`](releases/) directory.
 
 ### Install from a published build
 
-No Marketplace publication or release artifact is configured in this project
-yet. When a ZIP is attached to a GitHub release, download it from
-[Releases](https://github.com/sarabjeetchouhan/tech-library/releases) and
-install it using **Install Plugin from Disk...**.
+No Marketplace publication is configured in this project yet. Download a ZIP
+from the versioned [`releases/`](releases/) directory and install it using
+**Install Plugin from Disk...**.
 
 ## Build and project links
 
 - [Plugin source directory](https://github.com/sarabjeetchouhan/tech-library/tree/main/custom-plugins/svg-to-md-converter)
 - [Build configuration](https://github.com/sarabjeetchouhan/tech-library/blob/main/custom-plugins/svg-to-md-converter/build.gradle)
 - [Latest repository Actions runs](https://github.com/sarabjeetchouhan/tech-library/actions)
-- [Published releases and downloadable builds](https://github.com/sarabjeetchouhan/tech-library/releases)
+- [Local release builds](releases/)
 - [Gradle wrapper](gradlew)
 - [Local build output](build/distributions/)
 - [Local release builds](releases/1.0.0/)
